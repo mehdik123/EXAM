@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="mehdiPersistence">
+        <class>com.example.demo3.exemple3.ProjectEmploye</class>
+        <class>com.example.demo3.exemple3.EmploBean</class>
+        <class>com.example.demo3.exemple3.Project</class>
+        <class>com.example.demo3.exemple3.Emplo</class>
+        <class>com.example.demo3.exemple3.Emplo_Skills</class>
+        <class>com.example.demo3.exemple3.EmploBean</class>
+
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://mysql-23d00d43-mehdikamal535-6090.a.aivencloud.com:23469/defaultdb?sslmode=require"/>
+            <property name="jakarta.persistence.jdbc.user" value="avnadmin"/>
+            <property name="jakarta.persistence.jdbc.password" value="AVNS_VcdHEH4QXmrq-__uvtD"/>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="eclipselink.logging.level" value="INFO"/>
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>
